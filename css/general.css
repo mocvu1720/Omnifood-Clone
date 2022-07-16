@@ -68,6 +68,7 @@ SPACING SYSTEM (px)
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -75,6 +76,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  overflow-x: hidden;
+
 }
 
 /*************************/
@@ -114,6 +118,7 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
 .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
 }
@@ -123,7 +128,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   /* color: #2e1907; */
@@ -150,7 +156,7 @@ body {
 
 .subheading {
   display: block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
@@ -174,7 +180,7 @@ body {
   font-family: inherit;
 
   /* transition: background-color 0.5s; */
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -216,6 +222,8 @@ body {
 
 .link:link,
 .link:visited {
+  display: inline-block;
+
   color: #e67e22;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
@@ -241,6 +249,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {

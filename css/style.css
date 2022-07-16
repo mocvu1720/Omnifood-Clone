@@ -10,10 +10,11 @@
 
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
-  height: 2.4rem;
+  height: 2.2rem;
 }
 
 /************************/
@@ -24,7 +25,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -44,7 +45,7 @@
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1.6rem 2.4rem;
+  padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
@@ -55,6 +56,26 @@
   background-color: #cf711f;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+
 /************************/
 /* HERO SECTION */
 /************************/
@@ -63,6 +84,7 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 
 .hero {
   max-width: 130rem;
@@ -109,6 +131,7 @@
 
 .delivered-text {
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .delivered-text span {
@@ -203,7 +226,7 @@
 
 .step-img {
   width: 35%;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 /************************/
@@ -223,6 +246,7 @@
 
 .meal:hover {
   transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
@@ -231,6 +255,8 @@
 
 .meal-tags {
   margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
 }
 
 .tag {
@@ -256,7 +282,7 @@
 }
 
 .meal-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
@@ -386,6 +412,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.4rem;
+  color: #333;
   background-color: #ffd43b;
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
@@ -462,7 +489,6 @@
 /************************/
 
 .section-cta {
-
   padding: 9.6rem 0 12.8rem;
 }
 
@@ -473,7 +499,6 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-  height: 50rem;
   overflow: hidden;
 }
 
